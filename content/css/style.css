@@ -1,0 +1,396 @@
+:root {
+    --color-01: #001C41;
+    --color-02: #FFD43A;
+    --color-03: #C5DEFE;
+    --color-04: #D42625;
+    --color-05: #fff;
+    --color-06: #e4e4e4;
+    --color-07: #F5F5F5;
+    --color-08: #DEE2E6;
+
+}
+
+/* -box_left------------------- */
+.box_left {
+    height: 100vh;
+    width: 255px;
+    position: sticky;
+    top: 0;
+    background: var(--color-01);
+    color: var(--color-05);
+    padding: 10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.box_infor {
+    padding: 10px 0;
+    border-bottom: 2px solid var(--color-05);
+}
+
+.box_avata {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.box_avata .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box_infor .user_name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.box_menu .menu_item,
+.box_menu .box_item {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.box_menu .box_item {
+    color: var(--color-01);
+    font-weight: 600;
+}
+
+.box_menu .menu_item {
+    text-decoration: none;
+    color: var(--color-05);
+    font-weight: 400;
+}
+
+
+.menu_item>i {
+    min-width: 15px;
+}
+
+.box_menu .menu_item:hover {
+    background: var(--color-03);
+    color: var(--color-01);
+    font-weight: 600;
+}
+
+.menu_item.active {
+    background: var(--color-03);
+    color: var(--color-01);
+    font-weight: 600;
+}
+
+/* -box_right--------------------- */
+.box_right {
+    background: var(--color-08);
+    flex: 1;
+}
+
+.box_right_top {
+    background: var(--color-01);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.box_right_top i {
+    padding: 10px;
+    background: var(--color-02);
+    margin: 2px 15px;
+    border-radius: 5px;
+}
+
+.box_right_content .box_tite {
+    background: var(--color-05);
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid var(--color-02);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--color-01);
+}
+
+.box_count_item {
+    background: var(--color-05);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.box_count {
+    padding: 0 6px;
+}
+
+.row>* {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.box_count_item>i {
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.icon_01 {
+    color: #2EA759;
+    background: #BAFFD3;
+}
+
+.icon_02 {
+    color: #D82424;
+    background: #FABABA;
+}
+
+.icon_03 {
+    color: #E6902F;
+    background: #FCE1C3;
+}
+
+.icon_04 {
+    color: #1F5AAA;
+    background: #AECBF3;
+}
+
+.infor_item_top h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-04);
+    margin-bottom: 0;
+}
+
+.infor_item_top p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-01);
+    margin-bottom: 0;
+}
+
+.box_infor_item .title_des {
+    margin-bottom: 0;
+    color: #525252;
+    font-size: 12px;
+}
+
+
+.box_table {
+    background: var(--color-05);
+    border-radius: 5px;
+}
+
+.box_table>h2 {
+    font-size: 18px;
+    color: var(--color-01);
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-01);
+    margin-bottom: 0;
+}
+
+.box_chart {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+
+.box_chart>h2 {
+    font-size: 18px;
+    color: var(--color-01);
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-01);
+    margin-bottom: 0;
+
+}
+
+.box_table .box_btns {
+    border-bottom: 1px solid #ccc;
+}
+
+.table_style {
+    width: 100%;
+    border: 1px solid var(--color-08);
+    border-radius: 5px;
+}
+
+.table_style th,
+.table_style td {
+    border: 1px solid var(--color-08);
+    padding: 10px 20px;
+}
+
+.icon_btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon_btn a {
+    text-decoration: none;
+}
+
+.icon_btn a:nth-child(1) i {
+    padding: 5px;
+    border-radius: 5px;
+    color: #D42625;
+    background: #FFB6B8;
+}
+
+.icon_btn a:nth-child(2) i {
+    padding: 5px;
+    border-radius: 5px;
+    background: #ffdeb2;
+    color: #c79c00;
+}
+
+.icon_btn a:nth-child(3) i {
+    padding: 5px;
+    border-radius: 5px;
+    background: #b2f0bb;
+    color: #30A84E;
+}
+
+.icon_btn a:nth-child(4) i {
+    padding: 5px;
+    border-radius: 5px;
+    background: #aad3ff;
+    color: #007bff;
+}
+
+.check_column {
+    width: 10px;
+}
+
+.customer_column {
+    width: 200px;
+}
+
+.action_column {
+    width: 80px;
+}
+
+.action_column_dh {
+    width: 90px;
+}
+
+.box_avata_auth {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.box_avata_auth>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title_auth>h1 {
+    font-size: 25px;
+}
+
+.title_auths>h1 {
+    font-size: 24px;
+}
+
+.title_auths>p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.title_auth>p {
+    font-size: 20px;
+}
+
+.box_staff {
+    padding: 5px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.box_edit_user {
+    background: var(--color-07);
+    padding: 5px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.box_bt_av {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #b6d3ff;
+}
+
+.box_bt_av.bg {
+    background: #b7fed0;
+}
+
+.box_bt_av i {
+    font-size: 50px;
+}
+
+.icon_1 {
+    color: #0D6EFD;
+}
+
+.icon_2 {
+    color: #2EA759;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.view_detail {
+    color: #001C41;
+    text-decoration: none;
+}
+
+.view_detail:hover {
+    color: #0D6EFD;
+}
+
+.error {
+    color: red;
+}
+
+.name_column {
+    width: 400px;
+}
+
+.title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    /* Giới hạn số dòng hiển thị */
+}
+
+.text_name {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.name_infor {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.chart_name {
+    font-weight: 600;
+}
